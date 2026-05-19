@@ -200,49 +200,73 @@
 <body>
 
 <style id="roc-gate-style">
-  #roc-gate {
-    position: fixed; inset: 0; z-index: 99999;
-    background: #0a0a0a;
-    display: flex; align-items: center; justify-content: center;
-    font-family: Arial, sans-serif;
+  :root { --red:#CC0000; --black:#0a0a0a; --grey-dark:#111; --grey-mid:#1a1a1a; --grey-light:#252525; --grey-text:#888; --white:#fff; }
+  #roc-gate { position:fixed; inset:0; z-index:99999; font-family:Arial,sans-serif; background:var(--black); overflow:hidden; }
+  #roc-gate-backdrop { position:absolute; inset:0; display:flex; align-items:center; justify-content:center; }
+  #roc-gate-backdrop-grid { position:absolute; inset:0; background-image:linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px); background-size:60px 60px; }
+  #roc-gate-backdrop-content { position:relative; z-index:1; text-align:center; padding:40px; }
+  #roc-gate-backdrop-content .be { font-size:10px; letter-spacing:3px; text-transform:uppercase; color:var(--red); font-weight:700; margin-bottom:16px; display:flex; align-items:center; justify-content:center; gap:10px; }
+  #roc-gate-backdrop-content .be-line { width:28px; height:2px; background:var(--red); }
+  #roc-gate-backdrop-content h1 { font-size:clamp(48px,8vw,96px); font-weight:900; line-height:.95; text-transform:uppercase; letter-spacing:-3px; color:var(--white); margin:0 0 12px; }
+  #roc-gate-backdrop-content h1 span { color:var(--red); }
+  #roc-gate-backdrop-content p { font-size:15px; color:var(--grey-text); letter-spacing:1px; }
+  #roc-gate-blur { position:absolute; inset:0; backdrop-filter:blur(20px); -webkit-backdrop-filter:blur(20px); background:rgba(10,10,10,.6); z-index:2; }
+  #roc-gate-modal { position:absolute; inset:0; z-index:3; display:flex; align-items:center; justify-content:center; padding:24px; }
+  #roc-gate-form {
+    background:var(--grey-dark); border:1px solid var(--grey-mid); border-top:2px solid var(--red);
+    width:100%; max-width:420px; padding:48px 40px;
+    box-shadow:0 20px 60px rgba(0,0,0,.6),0 0 40px rgba(204,0,0,.08);
   }
-  #roc-gate-box {
-    width: 100%; max-width: 360px; padding: 48px 40px;
-    background: #111; border: 1px solid #222;
-    display: flex; flex-direction: column; gap: 20px;
+  #roc-gate-eyebrow { display:flex; align-items:center; gap:12px; margin-bottom:20px; }
+  #roc-gate-eyebrow .line { width:32px; height:2px; background:var(--red); }
+  #roc-gate-eyebrow span { font-size:10px; letter-spacing:3px; text-transform:uppercase; color:var(--red); font-weight:700; }
+  #roc-gate-form h2 { font-size:28px; font-weight:900; text-transform:uppercase; letter-spacing:-.5px; line-height:1; margin:0 0 8px; color:var(--white); }
+  #roc-gate-form p { font-size:13px; color:var(--grey-text); line-height:1.6; margin:0 0 28px; }
+  #roc-gate-pw-wrap { background:var(--grey-mid); border:1px solid var(--grey-light); margin-bottom:16px; transition:border-color .2s; }
+  #roc-gate-pw-wrap:focus-within { border-color:var(--red); }
+  #roc-gate-input {
+    background:transparent; border:0; font-size:14px; outline:0;
+    padding:16px; width:100%; box-sizing:border-box; color:var(--white);
+    font-family:Arial,sans-serif; letter-spacing:1px;
   }
-  #roc-gate-box .g-logo {
-    font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
-    color: #CC0000; font-weight: 700;
-  }
-  #roc-gate-box h2 {
-    font-size: 20px; font-weight: 900; text-transform: uppercase;
-    letter-spacing: -0.5px; color: #fff; margin: 0;
-  }
-  #roc-gate-box input[type=password] {
-    width: 100%; box-sizing: border-box;
-    background: #0a0a0a; border: 1px solid #2a2a2a;
-    color: #fff; font-size: 14px; padding: 12px 14px;
-    outline: none; letter-spacing: 2px;
-  }
-  #roc-gate-box input[type=password]:focus { border-color: #CC0000; }
+  #roc-gate-input::placeholder { color:#555; letter-spacing:2px; text-transform:uppercase; font-size:11px; font-weight:700; }
+  #roc-gate-err { font-size:12px; color:var(--red); display:none; margin-bottom:8px; }
   #roc-gate-btn {
-    background: #CC0000; color: #fff; border: none;
-    font-size: 11px; letter-spacing: 2px; text-transform: uppercase;
-    font-weight: 700; padding: 13px; cursor: pointer;
+    text-transform:uppercase; outline:0; background:var(--red); width:100%;
+    border:0; padding:16px; color:var(--white); font-size:12px; font-weight:900;
+    letter-spacing:3px; cursor:pointer; transition:background .2s; font-family:Arial,sans-serif;
   }
-  #roc-gate-btn:hover { background: #aa0000; }
-  #roc-gate-err {
-    font-size: 12px; color: #CC0000; display: none; margin-top: -8px;
+  #roc-gate-btn:hover { background:#E60000; }
+  #roc-gate-footer {
+    margin-top:24px; padding-top:20px; border-top:1px solid var(--grey-mid);
+    display:flex; align-items:center; justify-content:space-between;
+    font-size:10px; letter-spacing:2px; text-transform:uppercase; color:#444;
   }
+  #roc-gate-footer .dot { width:6px; height:6px; border-radius:50%; background:var(--red); display:inline-block; margin-right:8px; animation:rg-pulse 2s infinite; }
+  @keyframes rg-pulse { 0%,100%{opacity:1} 50%{opacity:.3} }
 </style>
 <div id="roc-gate">
-  <div id="roc-gate-box">
-    <span class="g-logo">ROC App</span>
-    <h2>Restricted Access</h2>
-    <input type="password" id="roc-gate-input" placeholder="Password" />
-    <span id="roc-gate-err">Incorrect password.</span>
-    <button id="roc-gate-btn">Enter</button>
+  <div id="roc-gate-backdrop">
+    <div id="roc-gate-backdrop-grid"></div>
+    <div id="roc-gate-backdrop-content">
+      <div class="be"><div class="be-line"></div>Restricted Access</div>
+      <h1>IRONMAN<br><span>OPS APP</span></h1>
+      <p>Project Update — Confidential</p>
+    </div>
+  </div>
+  <div id="roc-gate-blur"></div>
+  <div id="roc-gate-modal">
+    <div id="roc-gate-form">
+      <div id="roc-gate-eyebrow"><div class="line"></div><span>Authentication Required</span></div>
+      <h2>Project Update</h2>
+      <p>This briefing is restricted. Enter the access key to continue.</p>
+      <div id="roc-gate-pw-wrap">
+        <input type="password" id="roc-gate-input" placeholder="Access Key" autofocus />
+      </div>
+      <span id="roc-gate-err">Incorrect password.</span>
+      <button id="roc-gate-btn">Access</button>
+      <div id="roc-gate-footer"><span><span class="dot"></span>Secure</span><span>IRN — RaceOps</span></div>
+    </div>
   </div>
 </div>
 <script>
