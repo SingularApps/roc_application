@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>IRONMAN Ops App — Project Update · 25/08/2026</title>
+<title>IRONMAN Ops App — Project Update · 22/09/2026</title>
 <style>
   :root {
     --red: #CC0000;
@@ -345,8 +345,8 @@
   <a href="07-14-2026.html">Jul 14</a>
   <a href="07-28-2026.html">Jul 28</a>
   <a href="08-11-2026.html">Aug 11</a>
-  <a href="08-25-2026.html" data-current><span class="mn-dot"></span>Aug 25</a>
-  <a href="09-22-2026.html">Sep 22</a>
+  <a href="08-25-2026.html">Aug 25</a>
+  <a href="09-22-2026.html" data-current><span class="mn-dot"></span>Sep 22</a>
 </div>
 
 <div id="progress-bar"></div>
@@ -357,8 +357,8 @@
   <ul class="nav-links">
     <li><a href="#agenda">Agenda</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#deliveries">Deliveries</a></li>
-    <li><a href="#next">Next Up</a></li>
+    <li><a href="#deliveries">Shipped</a></li>
+    <li><a href="#next">Now Building</a></li>
     <li><a href="#discuss">Testing &amp; Rollout</a></li>
   </ul>
 </nav>
@@ -370,18 +370,18 @@
   <div class="container hero-content">
     <div class="hero-eyebrow">
       <div class="eyebrow-line"></div>
-      <span class="eyebrow-text">Bi-Weekly Update &middot; Aug 25, 2026</span>
+      <span class="eyebrow-text">Project Update &middot; Sep 22, 2026</span>
     </div>
     <h1 class="hero-title">IRONMAN<br><span>Staff App</span><br>ROC Application</h1>
-    <p class="hero-sub">Ops Team &mdash; Project Update &mdash; Testing &amp; Rollout Session</p>
+    <p class="hero-sub">Ops Team &mdash; Project Update &mdash; Straight Into Testing</p>
     <div class="hero-meta">
       <div class="hero-meta-item">
-        <label>Status</label>
-        <span style="color:#D4AF37">&#9679; Internal Testers</span>
+        <label>Window</label>
+        <span>Aug 25 &rarr; Sep 22 &middot; <span style="color:var(--grey-text);font-weight:400;">two sprints</span></span>
       </div>
       <div class="hero-meta-item">
-        <label>Distribution</label>
-        <span>TestFlight &middot; App Store &middot; Play Store</span>
+        <label>Status</label>
+        <span style="color:#D4AF37">&#9679; Internal Testers &middot; <span style="color:#27C93F">iOS live on App Store</span></span>
       </div>
       <div class="hero-meta-item">
         <label>Download</label>
@@ -390,10 +390,6 @@
             <svg width="12" height="12" viewBox="0 0 24 24" fill="white"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
             App Store
           </a>
-          <a href="https://play.google.com/store/apps/details?id=com.ironman.ops" target="_blank" style="color:var(--white);text-decoration:none;display:inline-flex;align-items:center;gap:6px;margin-right:12px;font-size:13px;border-bottom:1px solid #444;padding-bottom:1px;">
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="white"><path d="M3 20.5v-17c0-.83.94-1.3 1.6-.8l14 8.5c.6.36.6 1.24 0 1.6l-14 8.5c-.66.5-1.6.03-1.6-.8z"/></svg>
-            Play Store
-          </a>
           <a href="https://preview-ops.ironman.com/" target="_blank" style="color:var(--white);text-decoration:none;display:inline-flex;align-items:center;gap:6px;font-size:13px;border-bottom:1px solid #444;padding-bottom:1px;">
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
             Web
@@ -401,8 +397,8 @@
         </span>
       </div>
       <div class="hero-meta-item">
-        <label>Platform</label>
-        <span>iOS &middot; Android &middot; Web</span>
+        <label>Android</label>
+        <span style="color:#D4AF37;font-size:13px;">Internal track &mdash; Play Store on hold</span>
       </div>
     </div>
 
@@ -415,30 +411,41 @@
   <div class="container">
     <div class="section-label fade-in"><div class="line"></div><span>Today&rsquo;s Session</span></div>
     <h2 class="section-title fade-in">Agenda</h2>
-    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:2px;" class="fade-in">
 
-      <div style="background:var(--grey-mid);padding:28px 22px;border-top:2px solid var(--red);">
+    <div style="padding:12px 16px;background:var(--grey-mid);border-left:2px solid #D4AF37;margin-bottom:20px;" class="fade-in">
+      <span style="font-size:13px;color:#D4AF37;font-weight:700;">No demo today &mdash; we&rsquo;re going straight into testing. PCR live walkthrough next session.</span>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:2px;" class="fade-in">
+
+      <div style="background:var(--grey-mid);padding:26px 20px;border-top:2px solid var(--red);">
+        <div style="font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--red);font-weight:700;margin-bottom:10px;">3 min</div>
+        <div style="font-size:16px;font-weight:900;text-transform:uppercase;letter-spacing:-0.3px;margin-bottom:10px;">Roadmap</div>
+        <p style="font-size:12.5px;color:var(--grey-text);line-height:1.55;">Where we are &mdash; incident management closed, PCR in build, Roles &amp; Permissions on the board.</p>
+      </div>
+
+      <div style="background:var(--grey-mid);padding:26px 20px;border-top:2px solid var(--red);">
         <div style="font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--red);font-weight:700;margin-bottom:10px;">4 min</div>
-        <div style="font-size:17px;font-weight:900;text-transform:uppercase;letter-spacing:-0.3px;margin-bottom:10px;">Roadmap</div>
-        <p style="font-size:12.5px;color:var(--grey-text);line-height:1.55;">Where we are &mdash; PCR moves into development, Event Page Improvements ships.</p>
+        <div style="font-size:16px;font-weight:900;text-transform:uppercase;letter-spacing:-0.3px;margin-bottom:10px;">What Shipped</div>
+        <p style="font-size:12.5px;color:var(--grey-text);line-height:1.55;">Feedback from round 1 closed out, event page complete, the app in every language, and the app finally fast.</p>
       </div>
 
-      <div style="background:var(--grey-mid);padding:28px 22px;border-top:2px solid var(--red);">
-        <div style="font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--red);font-weight:700;margin-bottom:10px;">6 min</div>
-        <div style="font-size:17px;font-weight:900;text-transform:uppercase;letter-spacing:-0.3px;margin-bottom:10px;">Shipped &amp; In Review</div>
-        <p style="font-size:12.5px;color:var(--grey-text);line-height:1.55;">What landed this window &mdash; Event Page Improvements, plus <strong style="color:#fff">live looks at testing fixes and kiosk research</strong>.</p>
+      <div style="background:var(--grey-mid);padding:26px 20px;border-top:2px solid var(--red);">
+        <div style="font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--red);font-weight:700;margin-bottom:10px;">4 min</div>
+        <div style="font-size:16px;font-weight:900;text-transform:uppercase;letter-spacing:-0.3px;margin-bottom:10px;">Now Building &amp; Next</div>
+        <p style="font-size:12.5px;color:var(--grey-text);line-height:1.55;">PCR, Roles &amp; Permissions, Incident Management adjustments, Kiosk &mdash; then Live Activities and Post-Race Report.</p>
       </div>
 
-      <div style="background:var(--grey-mid);padding:28px 22px;border-top:2px solid var(--red);">
-        <div style="font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--red);font-weight:700;margin-bottom:10px;">5 min</div>
-        <div style="font-size:17px;font-weight:900;text-transform:uppercase;letter-spacing:-0.3px;margin-bottom:10px;">Now Building &amp; Next</div>
-        <p style="font-size:12.5px;color:var(--grey-text);line-height:1.55;">PCR&rsquo;s UI is in review &mdash; Leonardo walks through it live &mdash; and Kiosk is heading into design.</p>
+      <div style="background:var(--grey-mid);padding:26px 20px;border-top:2px solid #D4AF37;">
+        <div style="font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#D4AF37;font-weight:700;margin-bottom:10px;">4 min</div>
+        <div style="font-size:16px;font-weight:900;text-transform:uppercase;letter-spacing:-0.3px;margin-bottom:10px;">Testing &amp; Rollout</div>
+        <p style="font-size:12.5px;color:var(--grey-text);line-height:1.55;">How today&rsquo;s session runs, where to test, PCR at Kona, and the rollout path.</p>
       </div>
 
-      <div style="background:var(--grey-mid);padding:28px 22px;border-top:2px solid #D4AF37;">
-        <div style="font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#D4AF37;font-weight:700;margin-bottom:10px;">10 min</div>
-        <div style="font-size:17px;font-weight:900;text-transform:uppercase;letter-spacing:-0.3px;margin-bottom:10px;">Testing &amp; Rollout</div>
-        <p style="font-size:12.5px;color:var(--grey-text);line-height:1.55;">Today&rsquo;s focus &mdash; Phase 1 ran Aug 18; next session likely Tue, Sep 1. Status, participants, and what&rsquo;s next.</p>
+      <div style="background:var(--red);padding:26px 20px;">
+        <div style="font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#fff;font-weight:700;margin-bottom:10px;">1 hour</div>
+        <div style="font-size:16px;font-weight:900;text-transform:uppercase;letter-spacing:-0.3px;margin-bottom:10px;color:#fff;">&rarr; Test Session</div>
+        <p style="font-size:12.5px;color:rgba(255,255,255,0.88);line-height:1.55;">Guided tasks &mdash; some similar to Aug 18, plus incident management this time.</p>
       </div>
 
     </div>
@@ -452,7 +459,7 @@
     <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;" class="fade-in">
       <div>
         <h2 class="section-title" style="margin-bottom:4px">Project Roadmap</h2>
-        <p style="font-size:13px;color:var(--grey-text)">Bi-weekly snapshot &mdash; each column represents a 2-week sprint.</p>
+        <p style="font-size:13px;color:var(--grey-text)">Bi-weekly snapshot &mdash; each column is a 2-week sprint. The Sep 8 session was skipped (team in Nice), so this update covers two sprints.</p>
       </div>
       <a href="https://ironman-it-project-team.atlassian.net/jira/core/projects/OEA/timeline" target="_blank" style="display:inline-flex;align-items:center;gap:8px;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--grey-text);text-decoration:none;border:1px solid #2a2a2a;padding:9px 16px;border-radius:2px;transition:all 0.2s;flex-shrink:0;" onmouseover="this.style.borderColor='#CC0000';this.style.color='#fff'" onmouseout="this.style.borderColor='#2a2a2a';this.style.color='var(--grey-text)'">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
@@ -460,125 +467,137 @@
       </a>
     </div>
     <div class="fade-in roadmap-scroll">
+      <style>
+        #roadmap .roadmap-table { min-width: 1270px; }
+        #roadmap .roadmap-table .feat-col-h { width: 250px; min-width: 250px; }
+        #roadmap .roadmap-table .feat-cell { white-space: normal; text-overflow: clip; font-size: 12.5px; line-height: 1.3; padding: 9px 14px; }
+        #roadmap .roadmap-table .feat-cell a { margin-right: 6px; }
+        #roadmap .roadmap-table .date-header { font-size: 9px; letter-spacing: 0.3px; padding: 5px 2px; }
+        #roadmap .roadmap-table .month-header { font-size: 10px; letter-spacing: 1.8px; }
+        #roadmap .roadmap-table td { overflow: visible; }
+        #roadmap .event-chip { display:inline-block; font-size:9px; letter-spacing:0.3px; text-transform:uppercase; font-weight:700; color:#D4AF37; background:rgba(212,175,55,0.12); border:1px solid rgba(212,175,55,0.35); padding:3px 6px; border-radius:2px; white-space:nowrap; }
+      </style>
       <table class="roadmap-table">
         <thead>
           <tr>
             <th class="feat-col-h month-header" rowspan="2"></th>
-            <th colspan="2" class="month-header">April</th>
-            <th colspan="2" class="month-header">May</th>
-            <th colspan="2" class="month-header">June</th>
+            <th colspan="3" class="month-header">June</th>
             <th colspan="2" class="month-header">July</th>
             <th colspan="2" class="month-header">August</th>
             <th colspan="2" class="month-header">September</th>
             <th colspan="2" class="month-header">October</th>
+            <th colspan="2" class="month-header">November</th>
+            <th colspan="2" class="month-header">December</th>
           </tr>
           <tr>
-            <th class="date-header">Apr 7</th>
-            <th class="date-header">Apr 21</th>
-            <th class="date-header">May 5</th>
-            <th class="date-header">May 19</th>
             <th class="date-header">Jun 2</th>
             <th class="date-header">Jun 16</th>
             <th class="date-header">Jun 30</th>
             <th class="date-header">Jul 14</th>
             <th class="date-header">Jul 28</th>
             <th class="date-header">Aug 11</th>
-            <th class="date-header today-h">Aug 25 &#9679;</th>
-            <th class="date-header">Sep 8</th>
-            <th class="date-header">Sep 22</th>
+            <th class="date-header">Aug 25</th>
+            <th class="date-header" style="color:#3d3d3d;">Sep 8</th>
+            <th class="date-header today-h">Sep 22 &#9679;</th>
             <th class="date-header">Oct 6</th>
+            <th class="date-header">Oct 20</th>
+            <th class="date-header">Nov 3</th>
+            <th class="date-header">Nov 17</th>
+            <th class="date-header">Dec 1</th>
+            <th class="date-header">Dec 15</th>
           </tr>
         </thead>
         <tbody>
-          <!-- Completed items -->
-          <tr>
-            <td class="feat-cell"><a href="https://ironman-it-project-team.atlassian.net/browse/OEA-10" target="_blank">OEA-10</a>Tracking</td>
-            <td colspan="2"></td>
-            <td colspan="3" class="bar-cell"><div class="rbar rbar-done"></div></td>
+          <!-- EVENT MARKERS -->
+          <tr style="background:#0d0d0d !important;">
+            <td class="feat-cell" style="background:#141414;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#D4AF37;font-weight:700;">Field Events</td>
             <td colspan="9"></td>
+            <td class="bar-cell" style="text-align:center;"><span class="event-chip">Kona 10/10</span></td>
+            <td></td>
+            <td class="bar-cell" style="text-align:center;"><span class="event-chip">Panama 11/7</span></td>
+            <td></td>
+            <td class="bar-cell" style="text-align:center;"><span class="event-chip">70.3 FL 12/13</span></td>
+            <td></td>
           </tr>
+
+          <!-- DELIVERED -->
           <tr>
-            <td class="feat-cell"><a href="https://ironman-it-project-team.atlassian.net/browse/OEA-16" target="_blank">OEA-16</a>Slot Allocation</td>
-            <td colspan="2" class="bar-cell"><div class="rbar rbar-done"></div></td>
+            <td class="feat-cell"><a href="https://ironman-it-project-team.atlassian.net/browse/OEA-40" target="_blank">OEA-40</a>Global Dashboard</td>
+            <td colspan="3" class="bar-cell"><div class="rbar rbar-done"></div></td>
             <td colspan="12"></td>
           </tr>
           <tr>
-            <td class="feat-cell"><a href="https://ironman-it-project-team.atlassian.net/browse/OEA-102" target="_blank">OEA-102</a>Edit Race</td>
-            <td colspan="3" class="bar-cell"><div class="rbar rbar-done"></div></td>
+            <td class="feat-cell"><a href="https://ironman-it-project-team.atlassian.net/browse/OEA-203" target="_blank">OEA-203</a>Languages (App)</td>
+            <td colspan="2"></td>
+            <td colspan="2" class="bar-cell"><div class="rbar rbar-done"></div></td>
             <td colspan="11"></td>
           </tr>
           <tr>
-            <td class="feat-cell"><a href="https://ironman-it-project-team.atlassian.net/browse/OEA-9" target="_blank">OEA-9</a>Broadcasting 1.0</td>
-            <td colspan="2"></td>
-            <td colspan="3" class="bar-cell"><div class="rbar rbar-done"></div></td>
+            <td class="feat-cell"><a href="https://ironman-it-project-team.atlassian.net/browse/OEA-203" target="_blank">OEA-203</a>Languages (Web)</td>
+            <td colspan="4"></td>
+            <td colspan="2" class="bar-cell"><div class="rbar rbar-done"></div></td>
             <td colspan="9"></td>
           </tr>
-          <!-- OEA-40 Global Dashboard: done Jun 2–Jun 30 (cols 5–7) -->
-          <tr>
-            <td class="feat-cell"><a href="https://ironman-it-project-team.atlassian.net/browse/OEA-40" target="_blank">OEA-40</a>Global Dashboard</td>
-            <td colspan="4"></td>
-            <td colspan="3" class="bar-cell"><div class="rbar rbar-done"></div></td>
-            <td colspan="7"></td>
-          </tr>
-          <!-- OEA-104 Incident Report: done Jun 2–Aug 11 (cols 5–10), delivered -->
           <tr>
             <td class="feat-cell"><a href="https://ironman-it-project-team.atlassian.net/browse/OEA-104" target="_blank">OEA-104</a>Incident Report</td>
-            <td colspan="4"></td>
             <td colspan="6" class="bar-cell"><div class="rbar rbar-done"></div></td>
-            <td colspan="4"></td>
+            <td colspan="9"></td>
           </tr>
-          <!-- OEA-105 Incident View: in review Jun 16–Aug 11 (cols 6–10) -->
           <tr>
             <td class="feat-cell"><a href="https://ironman-it-project-team.atlassian.net/browse/OEA-105" target="_blank">OEA-105</a>Incident View</td>
+            <td colspan="1"></td>
+            <td colspan="5" class="bar-cell"><div class="rbar rbar-done"></div></td>
+            <td colspan="9"></td>
+          </tr>
+          <tr>
+            <td class="feat-cell"><a href="https://ironman-it-project-team.atlassian.net/browse/OEA-223" target="_blank">OEA-223/224</a>Event Page Improvements</td>
             <td colspan="5"></td>
-            <td colspan="5" class="bar-cell"><div class="rbar rbar-design"></div></td>
+            <td colspan="2" class="bar-cell"><div class="rbar rbar-done"></div></td>
+            <td colspan="8"></td>
+          </tr>
+
+          <!-- IN FLIGHT -->
+          <tr>
+            <td class="feat-cell"><a href="https://ironman-it-project-team.atlassian.net/browse/OEA-11" target="_blank">OEA-11</a>PCR <span style="color:#555;font-size:11px;">(dev complete &mdash; end of Sep)</span></td>
+            <td colspan="4"></td>
+            <td colspan="5" class="bar-cell"><div class="rbar rbar-progress"></div></td>
+            <td colspan="6"></td>
+          </tr>
+          <tr>
+            <td class="feat-cell"><a href="https://ironman-it-project-team.atlassian.net/browse/OEA-292" target="_blank">OEA-292</a>Roles &amp; Permissions / Auth v2</td>
+            <td colspan="7"></td>
+            <td colspan="4" class="bar-cell"><div class="rbar rbar-progress"></div></td>
             <td colspan="4"></td>
           </tr>
-          <!-- OEA-11 PCR: in development, targeting end of September; mobile UI in review, web UI not started, backend spike (OEA-298) still queued (cols 9–13) -->
           <tr>
-            <td class="feat-cell"><a href="https://ironman-it-project-team.atlassian.net/browse/OEA-11" target="_blank">OEA-11</a>PCR <span style="color:#555;font-size:11px;">(targeting end of Sep)</span></td>
+            <td class="feat-cell"><a href="https://ironman-it-project-team.atlassian.net/browse/OEA-466" target="_blank">OEA-466</a>Incident Mgmt &mdash; Adjustments</td>
             <td colspan="8"></td>
-            <td colspan="5" class="bar-cell"><div class="rbar rbar-progress"></div></td>
-            <td colspan="1"></td>
+            <td colspan="2" class="bar-cell"><div class="rbar rbar-progress"></div></td>
+            <td colspan="5"></td>
           </tr>
-          <!-- OEA-106 Broadcast 2.0: pushed out, no longer scheduled within the visible window -->
           <tr>
-            <td class="feat-cell"><a href="https://ironman-it-project-team.atlassian.net/browse/OEA-106" target="_blank">OEA-106</a>Broadcast 2.0 <span style="color:#555;font-size:11px;">(pushed &mdash; TBD)</span></td>
-            <td colspan="14"></td>
+            <td class="feat-cell"><a href="https://ironman-it-project-team.atlassian.net/browse/OEA-18" target="_blank">OEA-18</a>Kiosk <span style="color:#555;font-size:11px;">(in design)</span></td>
+            <td colspan="7"></td>
+            <td colspan="3" class="bar-cell"><div class="rbar rbar-design"></div></td>
+            <td colspan="3" class="bar-cell"><div class="rbar rbar-waiting"></div></td>
+            <td colspan="2"></td>
           </tr>
-          <!-- OEA-103 Live Activities: Sep 8–Sep 22 (cols 12–13) -->
+
+          <!-- NEXT -->
           <tr>
             <td class="feat-cell"><a href="https://ironman-it-project-team.atlassian.net/browse/OEA-103" target="_blank">OEA-103</a>Live Activities</td>
             <td colspan="11"></td>
             <td colspan="2" class="bar-cell"><div class="rbar rbar-waiting"></div></td>
-            <td></td>
+            <td colspan="2"></td>
           </tr>
-          <!-- OEA-18 Kiosk: Sep 8–Oct 6+ (cols 12–14) -->
           <tr>
-            <td class="feat-cell"><a href="https://ironman-it-project-team.atlassian.net/browse/OEA-18" target="_blank">OEA-18</a>Kiosk</td>
-            <td colspan="11"></td>
-            <td colspan="3" class="bar-cell"><div class="rbar rbar-waiting"></div></td>
+            <td class="feat-cell">Post-Race Report</td>
+            <td colspan="13"></td>
+            <td colspan="2" class="bar-cell"><div class="rbar rbar-waiting"></div></td>
           </tr>
-          <!-- OEA-223–225 Event Page Improvements: merged epic, concluded Aug 11–Aug 25 (cols 10–11) -->
           <tr>
-            <td class="feat-cell"><a href="https://ironman-it-project-team.atlassian.net/browse/OEA-223" target="_blank">OEA-223&ndash;225</a>Event Page Improvements</td>
-            <td colspan="9"></td>
-            <td colspan="2" class="bar-cell"><div class="rbar rbar-done"></div></td>
-            <td colspan="3"></td>
-          </tr>
-          <!-- OEA-203 Languages (App): concluded Jun 30–Jul 14 (cols 7–8) -->
-          <tr>
-            <td class="feat-cell"><a href="https://ironman-it-project-team.atlassian.net/browse/OEA-203" target="_blank">OEA-203</a>Languages (App)</td>
-            <td colspan="6"></td>
-            <td colspan="2" class="bar-cell"><div class="rbar rbar-done"></div></td>
-            <td colspan="6"></td>
-          </tr>
-          <!-- OEA-203 Languages (Web): concluded in the last fortnight, Jul 28–Aug 11 (cols 9–10) -->
-          <tr>
-            <td class="feat-cell"><a href="https://ironman-it-project-team.atlassian.net/browse/OEA-203" target="_blank">OEA-203</a>Languages (Web)</td>
-            <td colspan="8"></td>
-            <td colspan="2" class="bar-cell"><div class="rbar rbar-done"></div></td>
-            <td colspan="4"></td>
+            <td class="feat-cell"><a href="https://ironman-it-project-team.atlassian.net/browse/OEA-106" target="_blank">OEA-106</a>Broadcast 2.0 <span style="color:#555;font-size:11px;">(TBD)</span></td>
+            <td colspan="15"></td>
           </tr>
         </tbody>
       </table>
@@ -586,198 +605,213 @@
     <div class="roadmap-legend fade-in">
       <div class="legend-item"><div class="legend-swatch" style="background:#27C93F"></div>Done</div>
       <div class="legend-item"><div class="legend-swatch" style="background:var(--red)"></div>In Development</div>
-      <div class="legend-item"><div class="legend-swatch" style="background:#5A7AB8"></div>In Review</div>
+      <div class="legend-item"><div class="legend-swatch" style="background:#5A7AB8"></div>In Design / Review</div>
       <div class="legend-item"><div class="legend-swatch" style="background:#555"></div>Planned</div>
+      <div class="legend-item"><div class="legend-swatch" style="background:rgba(212,175,55,0.5)"></div>Field event</div>
     </div>
   </div>
 </section>
 
-<!-- DELIVERIES -->
+<!-- SHIPPED -->
 <section id="deliveries">
   <div class="container">
-    <div class="section-label fade-in"><div class="line"></div><span>Shipped &amp; In Review</span></div>
-    <h2 class="section-title fade-in">Deliveries</h2>
-    <!-- THIS CYCLE BANNER -->
-    <div style="margin-top:24px;margin-bottom:2px;" class="fade-in">
-      <div style="padding:12px 16px;background:var(--grey-mid);border-left:2px solid var(--red);">
-        <span style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--red);font-weight:700;">Reporting Window &mdash; Aug 11 &rarr; Aug 25, 2026 &nbsp;&bull;&nbsp; <span style="color:#27C93F;">Since last Project Update</span></span>
-      </div>
-    </div>
+    <div class="section-label fade-in"><div class="line"></div><span>Since The Last Update &mdash; Two Sprints</span></div>
+    <h2 class="section-title fade-in">What Shipped</h2>
 
-    <div class="deliveries-grid fade-in">
-      <div class="delivery-card">
-        <div class="delivery-number">01</div>
-        <div class="delivery-title">Event Page Improvements &mdash; Mobile</div>
-        <div class="delivery-desc">The new event screen in the app now ships across three states, matching the updated designs.</div>
-        <div class="delivery-tags">
-          <span class="delivery-tag tag-done">Delivered</span>
-        </div>
-      </div>
-      <div class="delivery-card">
-        <div class="delivery-number">02</div>
-        <div class="delivery-title">Testing Feedback &mdash; Adjustments &amp; Web Translation</div>
-        <div class="delivery-desc">Adjustments requested by the Phase 1 testing group are being worked through, alongside a look at the web translation.</div>
-        <div class="delivery-tags">
-          <span class="delivery-tag tag-dev">In Progress</span>
-          <span class="delivery-tag" style="background:var(--red);color:#fff;">Live Demo Today &mdash; Hyago</span>
-        </div>
-      </div>
-      <div class="delivery-card">
-        <div class="delivery-number">03</div>
-        <div class="delivery-title">Kiosk &mdash; Facial Recognition Research (Shay)</div>
-        <div class="delivery-desc">Shay's exploration of facial-recognition check-in for the Kiosk module &mdash; feasibility, a privacy-first design (no stored images, numeric match code only, always a non-face fallback), and the regulatory landscape across states/countries. Now moving into UI design for the flow.</div>
-        <div class="delivery-tags">
-          <span class="delivery-tag" style="background:rgba(212,175,55,0.12);color:#D4AF37;border:1px solid rgba(212,175,55,0.35);">Research Findings</span>
-          <span class="delivery-tag tag-dev">UI In Progress</span>
-          <span class="delivery-tag" style="background:var(--red);color:#fff;">Live Demo (Time Permitting) &mdash; Shay</span>
-        </div>
-        <a href="facial-recognition-spike.html" target="_blank" style="font-size:11px;color:#555;margin-top:8px;display:flex;align-items:center;gap:6px;text-decoration:none;">&#9654;&nbsp; View full research</a>
-      </div>
+    <div style="background:var(--grey-mid);padding:36px 32px;border-top:2px solid var(--red);" class="fade-in">
+      <ul style="list-style:none;padding:0;margin:0;display:grid;grid-template-columns:1fr 1fr;gap:18px 44px;">
+
+        <li style="display:flex;align-items:flex-start;gap:12px;font-size:13px;color:var(--grey-text);line-height:1.6;grid-column:1 / -1;">
+          <span style="color:#27C93F;flex-shrink:0;font-weight:900;">&#10003;</span>
+          <span><strong style="color:#fff">Everything raised in round 1 is fixed</strong> &mdash; 23 adjustments from the Aug 18 session and two internal IT rounds: sending messages in chat, renaming groups, drafts being lost, in-chat notifications now appearing in the notification list, images rendering, chat push notifications, the emergency-contact label, Android polish, changing a phone number, athlete search, and empty states.</span>
+        </li>
+
+        <li style="display:flex;align-items:flex-start;gap:12px;font-size:13px;color:var(--grey-text);line-height:1.6;grid-column:1 / -1;">
+          <span style="color:#27C93F;flex-shrink:0;font-weight:900;">&#10003;</span>
+          <span><strong style="color:#fff">The app is fast again</strong> &mdash; lighter initial load, languages loaded on demand, shorter cache lifetime. <strong style="color:#fff">The Gulf Coast / Florida spinning issue is resolved.</strong></span>
+        </li>
+
+        <li style="display:flex;align-items:flex-start;gap:12px;font-size:13px;color:var(--grey-text);line-height:1.6;">
+          <span style="color:#27C93F;flex-shrink:0;font-weight:900;">&#10003;</span>
+          <span><strong style="color:#fff">The event page is complete</strong> &mdash; pre-race, live and post-race states all behave correctly in the app.</span>
+        </li>
+
+        <li style="display:flex;align-items:flex-start;gap:12px;font-size:13px;color:var(--grey-text);line-height:1.6;">
+          <span style="color:#27C93F;flex-shrink:0;font-weight:900;">&#10003;</span>
+          <span><strong style="color:#fff">The platform speaks every language we need</strong> &mdash; web fully translated, with a language selector on app and web.</span>
+        </li>
+
+        <li style="display:flex;align-items:flex-start;gap:12px;font-size:13px;color:var(--grey-text);line-height:1.6;">
+          <span style="color:#27C93F;flex-shrink:0;font-weight:900;">&#10003;</span>
+          <span><strong style="color:#fff">The Global Dashboard is now the home screen</strong> &mdash; and locked events are clearly indicated.</span>
+        </li>
+
+        <li style="display:flex;align-items:flex-start;gap:12px;font-size:13px;color:var(--grey-text);line-height:1.6;">
+          <span style="color:#27C93F;flex-shrink:0;font-weight:900;">&#10003;</span>
+          <span><strong style="color:#fff">Editing a race is done</strong> &mdash; the full flow is available end to end.</span>
+        </li>
+
+        <li style="display:flex;align-items:flex-start;gap:12px;font-size:13px;color:var(--grey-text);line-height:1.6;">
+          <span style="color:#27C93F;flex-shrink:0;font-weight:900;">&#10003;</span>
+          <span><strong style="color:#fff">PCR is fully designed</strong> &mdash; every mobile and web screen, reviewed and validated with TK.</span>
+        </li>
+
+        <li style="display:flex;align-items:flex-start;gap:12px;font-size:13px;color:var(--grey-text);line-height:1.6;">
+          <span style="color:#27C93F;flex-shrink:0;font-weight:900;">&#10003;</span>
+          <span><strong style="color:#fff">PCR&rsquo;s data architecture is settled</strong> &mdash; how records are stored, versioned and secured is defined, and the build is underway.</span>
+        </li>
+
+        <li style="display:flex;align-items:flex-start;gap:12px;font-size:13px;color:var(--grey-text);line-height:1.6;">
+          <span style="color:#27C93F;flex-shrink:0;font-weight:900;">&#10003;</span>
+          <span><strong style="color:#fff">Roles &amp; Permissions has an agreed model</strong> &mdash; global roles plus event-scoped access from the CRM, ready to test.</span>
+        </li>
+
+        <li style="display:flex;align-items:flex-start;gap:12px;font-size:13px;color:var(--grey-text);line-height:1.6;">
+          <span style="color:#27C93F;flex-shrink:0;font-weight:900;">&#10003;</span>
+          <span><strong style="color:#fff">Kiosk started taking shape</strong> &mdash; facial recognition confirmed feasible, and kiosk configuration &amp; category setup delivered. <a href="facial-recognition-spike.html" target="_blank" style="color:#555;text-decoration:none;border-bottom:1px solid #333;">View research &#8599;</a></span>
+        </li>
+
+      </ul>
     </div>
 
   </div>
 </section>
 
-<!-- NEXT DEVELOPMENTS -->
+<!-- NOW BUILDING & NEXT -->
 <section id="next" style="background:var(--black);padding:96px 0;">
   <div class="container">
     <div class="section-label fade-in"><div class="line"></div><span>Pipeline</span></div>
     <h2 class="section-title fade-in">Now Building &amp; Next</h2>
 
-    <!-- PCR spotlight -->
+    <!-- PCR -->
     <div style="padding:10px 16px;background:var(--grey-mid);border-left:2px solid var(--red);margin-bottom:2px;" class="fade-in">
-      <span style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--red);font-weight:700;">Major Module &mdash; Now Building</span>
+      <span style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--red);font-weight:700;">Major Module &mdash; In Build</span>
     </div>
     <div class="fade-in" style="margin-bottom:2px;">
       <div style="background:var(--grey-dark);padding:36px 32px;border-top:2px solid var(--red);">
-        <div style="font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--red);font-weight:700;margin-bottom:10px;">OEA-316&ndash;332 &middot; OEA-298 &mdash; Mobile UI In Review, Web UI Not Started</div>
+        <div style="font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--red);font-weight:700;margin-bottom:10px;">OEA-11 &mdash; Design Complete &middot; Dev Complete Targeted End Of September</div>
         <div style="font-size:24px;font-weight:900;text-transform:uppercase;letter-spacing:-0.5px;margin-bottom:10px;">PCR &mdash; Patient Care Record</div>
-        <p style="font-size:13px;color:var(--grey-text);line-height:1.65;margin-bottom:20px;max-width:820px;"><strong style="color:#fff">Mobile UI is furthest along:</strong> entry points, main form, and list filters are in review, with the Vitals/Labs/IV modal in progress. <strong style="color:#fff">Web UI design hasn&rsquo;t started yet.</strong> Backend architecture spike (OEA-298) is still queued and is the next thing to unblock.</p>
-        <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:20px;">
-          <div style="background:var(--grey-mid);padding:14px 16px;"><div style="font-size:10px;letter-spacing:1px;text-transform:uppercase;color:var(--grey-text);margin-bottom:4px;">Form</div><div style="font-size:12.5px;color:#ccc;">COT, Health Profile, Complaints, Physical Findings, Treatments &mdash; mobile in review</div></div>
-          <div style="background:var(--grey-mid);padding:14px 16px;"><div style="font-size:10px;letter-spacing:1px;text-transform:uppercase;color:var(--grey-text);margin-bottom:4px;">Modals</div><div style="font-size:12.5px;color:#ccc;">Vitals, labs, and IV modals &mdash; in progress</div></div>
-          <div style="background:var(--grey-mid);padding:14px 16px;"><div style="font-size:10px;letter-spacing:1px;text-transform:uppercase;color:var(--grey-text);margin-bottom:4px;">Lifecycle</div><div style="font-size:12.5px;color:#ccc;">View + edit history, discharge/close &mdash; not started</div></div>
-          <div style="background:var(--grey-mid);padding:14px 16px;"><div style="font-size:10px;letter-spacing:1px;text-transform:uppercase;color:var(--grey-text);margin-bottom:4px;">Records</div><div style="font-size:12.5px;color:#ccc;">List + filters &mdash; in review (mobile)</div></div>
-        </div>
+        <p style="font-size:13px;color:var(--grey-text);line-height:1.7;margin-bottom:20px;max-width:900px;">Design is complete and was <strong style="color:#fff">reviewed live with TK last week &mdash; validated, strong reception.</strong> Adjustments are coming on the discharge flow: discharge diagnosis plus a structured set of instructions for the athlete. Current focus is <strong style="color:#fff">permissions and data security</strong> for this first field deployment &mdash; who can open, read, amend and close a record, and how medical access is scoped per event.</p>
         <div style="display:flex;gap:8px;flex-wrap:wrap;">
-          <span style="display:inline-flex;align-items:center;gap:8px;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;padding:4px 10px;background:rgba(212,175,55,0.08);border:1px solid rgba(212,175,55,0.3);color:#D4AF37;">Mobile UI In Review</span>
-          <span style="display:inline-flex;align-items:center;gap:8px;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;padding:4px 10px;background:rgba(100,100,100,0.12);border:1px solid #333;color:var(--grey-text);">Web UI Not Started</span>
-          <span style="display:inline-flex;align-items:center;gap:8px;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;padding:4px 10px;background:rgba(90,122,184,0.12);border:1px solid rgba(90,122,184,0.35);color:#8fa8d6;">Backend Spike Queued &mdash; OEA-298</span>
-          <span style="display:inline-flex;align-items:center;gap:8px;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;padding:4px 10px;background:rgba(39,201,63,0.08);border:1px solid rgba(39,201,63,0.3);color:#27C93F;">Medical Team Highly Engaged</span>
-          <span style="display:inline-flex;align-items:center;gap:8px;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;padding:4px 10px;background:var(--red);color:#fff;">Live Demo Today &mdash; Leonardo</span>
+          <span style="display:inline-flex;align-items:center;gap:8px;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;padding:4px 10px;background:rgba(39,201,63,0.08);border:1px solid rgba(39,201,63,0.3);color:#27C93F;">Design Validated With TK</span>
+          <span style="display:inline-flex;align-items:center;gap:8px;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;padding:4px 10px;background:rgba(212,175,55,0.08);border:1px solid rgba(212,175,55,0.3);color:#D4AF37;">Discharge Flow Adjustments Incoming</span>
+          <span style="display:inline-flex;align-items:center;gap:8px;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;padding:4px 10px;background:rgba(204,0,0,0.18);border:1px solid rgba(204,0,0,0.5);color:#FF6B6B;">Focus: Permissions &amp; Data Security</span>
+          <span style="display:inline-flex;align-items:center;gap:8px;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;padding:4px 10px;background:rgba(100,100,100,0.12);border:1px solid #333;color:var(--grey-text);">Live Walkthrough Next Session</span>
         </div>
       </div>
     </div>
 
-    <div class="fade-in" style="margin-bottom:2px;">
+    <!-- ROLES & PERMISSIONS + INCIDENT MGMT -->
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:2px;margin-bottom:2px;" class="fade-in">
+
       <div style="background:var(--grey-dark);padding:32px 28px;border-top:2px solid var(--red);">
-        <div style="font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--red);font-weight:700;margin-bottom:10px;">OEA-294&ndash;296</div>
-        <div style="font-size:19px;font-weight:900;text-transform:uppercase;letter-spacing:-0.5px;margin-bottom:10px;">Backend &amp; Access Model</div>
-        <p style="font-size:13px;color:var(--grey-text);line-height:1.65;margin-bottom:16px;">The permissions foundation the whole app builds on.</p>
-        <ul style="list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:8px 28px;">
-          <li style="display:flex;align-items:flex-start;gap:10px;font-size:13px;color:var(--grey-text);"><span style="width:5px;height:5px;border-radius:50%;background:var(--red);flex-shrink:0;margin-top:6px;display:block;"></span>Global roles assigned at login</li>
-          <li style="display:flex;align-items:flex-start;gap:10px;font-size:13px;color:var(--grey-text);"><span style="width:5px;height:5px;border-radius:50%;background:var(--red);flex-shrink:0;margin-top:6px;display:block;"></span>Event-scoped positions</li>
-          <li style="display:flex;align-items:flex-start;gap:10px;font-size:13px;color:var(--grey-text);"><span style="width:5px;height:5px;border-radius:50%;background:var(--red);flex-shrink:0;margin-top:6px;display:block;"></span>Position &rarr; tier / permission configuration</li>
+        <div style="font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--red);font-weight:700;margin-bottom:10px;">OEA-292 &mdash; Sep &rarr; Oct</div>
+        <div style="font-size:19px;font-weight:900;text-transform:uppercase;letter-spacing:-0.5px;margin-bottom:10px;">Roles &amp; Permissions / Auth v2</div>
+        <p style="font-size:13px;color:var(--grey-text);line-height:1.7;margin-bottom:16px;">The permissions foundation the whole platform builds on.</p>
+        <ul style="list-style:none;padding:0;display:flex;flex-direction:column;gap:9px;">
+          <li style="display:flex;align-items:flex-start;gap:10px;font-size:13px;color:var(--grey-text);line-height:1.5;"><span style="width:5px;height:5px;border-radius:50%;background:var(--red);flex-shrink:0;margin-top:7px;display:block;"></span>Global roles attach to the user</li>
+          <li style="display:flex;align-items:flex-start;gap:10px;font-size:13px;color:var(--grey-text);line-height:1.5;"><span style="width:5px;height:5px;border-radius:50%;background:var(--red);flex-shrink:0;margin-top:7px;display:block;"></span>Event-scoped access derives from the CRM position</li>
+          <li style="display:flex;align-items:flex-start;gap:10px;font-size:13px;color:var(--grey-text);line-height:1.5;"><span style="width:5px;height:5px;border-radius:50%;background:var(--red);flex-shrink:0;margin-top:7px;display:block;"></span>Mobile auth sequenced behind the BFF foundation</li>
+          <li style="display:flex;align-items:flex-start;gap:10px;font-size:13px;color:var(--grey-text);line-height:1.5;"><span style="width:5px;height:5px;border-radius:50%;background:var(--red);flex-shrink:0;margin-top:7px;display:block;"></span>Full platform migration in October</li>
         </ul>
       </div>
+
+      <div style="background:var(--grey-dark);padding:32px 28px;border-top:2px solid var(--red);">
+        <div style="font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--red);font-weight:700;margin-bottom:10px;">OEA-466 &mdash; Adjustments In Flight</div>
+        <div style="font-size:19px;font-weight:900;text-transform:uppercase;letter-spacing:-0.5px;margin-bottom:10px;">Incident Management</div>
+        <p style="font-size:13px;color:var(--grey-text);line-height:1.7;margin-bottom:16px;">From Beth&rsquo;s review and from Nice &mdash; <strong style="color:#fff">observed live with the ROC and global security team.</strong></p>
+        <ul style="list-style:none;padding:0;display:flex;flex-direction:column;gap:9px;">
+          <li style="display:flex;align-items:flex-start;gap:10px;font-size:13px;color:var(--grey-text);line-height:1.5;"><span style="width:5px;height:5px;border-radius:50%;background:var(--red);flex-shrink:0;margin-top:7px;display:block;"></span>The form leads with <strong style="color:#fff">race leg</strong>&nbsp;&mdash; swim / bike / run / other</li>
+          <li style="display:flex;align-items:flex-start;gap:10px;font-size:13px;color:var(--grey-text);line-height:1.5;"><span style="width:5px;height:5px;border-radius:50%;background:var(--red);flex-shrink:0;margin-top:7px;display:block;"></span>Then shows only the incident types valid for that leg</li>
+          <li style="display:flex;align-items:flex-start;gap:10px;font-size:13px;color:var(--grey-text);line-height:1.5;"><span style="width:5px;height:5px;border-radius:50%;background:var(--red);flex-shrink:0;margin-top:7px;display:block;"></span>Filtering so each function sees only its own incident category</li>
+        </ul>
+      </div>
+
     </div>
 
-    <!-- Kiosk spotlight -->
-    <div style="padding:10px 16px;background:var(--grey-mid);border-left:2px solid #555;margin-bottom:2px;margin-top:32px;" class="fade-in">
-      <span style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--grey-text);font-weight:700;">Entering Design</span>
-    </div>
+    <!-- KIOSK -->
     <div class="fade-in" style="margin-bottom:48px;">
-      <div style="background:var(--grey-dark);padding:36px 32px;border-top:2px solid #555;">
-        <div style="font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--grey-text);font-weight:700;margin-bottom:10px;">OEA-18 &middot; OEA-177 Spike Wrapping Up</div>
-        <div style="font-size:24px;font-weight:900;text-transform:uppercase;letter-spacing:-0.5px;margin-bottom:10px;">Kiosk</div>
-        <p style="font-size:13px;color:var(--grey-text);line-height:1.65;margin-bottom:20px;max-width:820px;">Athlete-facing self-service for <strong style="color:#fff">event registration and check-in</strong>, ending in bib and race-kit pickup. QR-code driven from the ticket email, iPad as the primary device. The exploration spike surfaced the biggest UX opportunity: <strong style="color:#fff">team &amp; relay management</strong> is currently so cumbersome that staff cancel and recreate the whole relay order just to swap a captain &mdash; that workaround should not survive into the new design.</p>
-        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:20px;">
-          <div style="background:var(--grey-mid);padding:14px 16px;"><div style="font-size:10px;letter-spacing:1px;text-transform:uppercase;color:var(--grey-text);margin-bottom:4px;">Use Cases</div><div style="font-size:12.5px;color:#ccc;">Pre-registered check-in, walk-up registration, future-event sign-up</div></div>
-          <div style="background:var(--grey-mid);padding:14px 16px;"><div style="font-size:10px;letter-spacing:1px;text-transform:uppercase;color:var(--grey-text);margin-bottom:4px;">Roles</div><div style="font-size:12.5px;color:#ccc;">Volunteers handle standard check-in; staff handle changes, cancellations, relay edits</div></div>
-          <div style="background:var(--grey-mid);padding:14px 16px;"><div style="font-size:10px;letter-spacing:1px;text-transform:uppercase;color:var(--grey-text);margin-bottom:4px;">Improvement Areas</div><div style="font-size:12.5px;color:#ccc;">Team/relay management, modern payments incl. tap-to-pay, cancellation flow</div></div>
-        </div>
-        <div class="discuss-sub-label" style="margin-top:0;">Screens Going Into Design</div>
-        <ul style="list-style:none;padding:0;display:grid;grid-template-columns:repeat(2,1fr);gap:6px 24px;margin-bottom:20px;">
-          <li style="display:flex;align-items:flex-start;gap:10px;font-size:13px;color:var(--grey-text);"><span style="width:5px;height:5px;border-radius:50%;background:#888;flex-shrink:0;margin-top:6px;display:block;"></span>Kiosk configuration &amp; category setup</li>
-          <li style="display:flex;align-items:flex-start;gap:10px;font-size:13px;color:var(--grey-text);"><span style="width:5px;height:5px;border-radius:50%;background:#888;flex-shrink:0;margin-top:6px;display:block;"></span>Athlete check-in (QR, manual fallback, waiver, ID check)</li>
-          <li style="display:flex;align-items:flex-start;gap:10px;font-size:13px;color:var(--grey-text);"><span style="width:5px;height:5px;border-radius:50%;background:#888;flex-shrink:0;margin-top:6px;display:block;"></span>Ticket type change</li>
-          <li style="display:flex;align-items:flex-start;gap:10px;font-size:13px;color:var(--grey-text);"><span style="width:5px;height:5px;border-radius:50%;background:#888;flex-shrink:0;margin-top:6px;display:block;"></span>Walk-up registration</li>
-          <li style="display:flex;align-items:flex-start;gap:10px;font-size:13px;color:var(--grey-text);"><span style="width:5px;height:5px;border-radius:50%;background:#888;flex-shrink:0;margin-top:6px;display:block;"></span>Relay &amp; team management</li>
+      <div style="background:var(--grey-dark);padding:32px 28px;border-top:2px solid #5A7AB8;">
+        <div style="font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#8fa8d6;font-weight:700;margin-bottom:10px;">OEA-18 &mdash; In Design</div>
+        <div style="font-size:19px;font-weight:900;text-transform:uppercase;letter-spacing:-0.5px;margin-bottom:14px;">Kiosk</div>
+        <ul style="list-style:none;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:10px 24px;">
+          <li style="display:flex;align-items:flex-start;gap:10px;font-size:13px;color:var(--grey-text);line-height:1.5;"><span style="width:5px;height:5px;border-radius:50%;background:#5A7AB8;flex-shrink:0;margin-top:7px;display:block;"></span>Check-in</li>
+          <li style="display:flex;align-items:flex-start;gap:10px;font-size:13px;color:var(--grey-text);line-height:1.5;"><span style="width:5px;height:5px;border-radius:50%;background:#5A7AB8;flex-shrink:0;margin-top:7px;display:block;"></span>Walk-up registration</li>
+          <li style="display:flex;align-items:flex-start;gap:10px;font-size:13px;color:var(--grey-text);line-height:1.5;"><span style="width:5px;height:5px;border-radius:50%;background:#5A7AB8;flex-shrink:0;margin-top:7px;display:block;"></span>Ticket-type change</li>
+          <li style="display:flex;align-items:flex-start;gap:10px;font-size:13px;color:var(--grey-text);line-height:1.5;"><span style="width:5px;height:5px;border-radius:50%;background:#5A7AB8;flex-shrink:0;margin-top:7px;display:block;"></span>Relay &amp; team management</li>
         </ul>
-        <div style="display:flex;gap:8px;flex-wrap:wrap;">
-          <span style="display:inline-flex;align-items:center;gap:8px;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;padding:4px 10px;background:rgba(212,175,55,0.08);border:1px solid rgba(212,175,55,0.3);color:#D4AF37;">Spike Wrapping Up &mdash; Design Next</span>
-        </div>
       </div>
     </div>
 
-    <!-- Coming up next cycles -->
+    <!-- NEXT -->
     <div style="padding:10px 16px;background:var(--grey-mid);border-left:2px solid #555;margin-bottom:2px;" class="fade-in">
-      <span style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--grey-text);font-weight:700;">Coming Up &mdash; Next Cycles</span>
+      <span style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--grey-text);font-weight:700;">Next &mdash; After The Current Cycle</span>
     </div>
     <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:2px;" class="fade-in">
 
-      <div style="background:#141414;padding:24px 24px;border-top:2px solid #333;">
-        <div style="font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:#555;font-weight:700;margin-bottom:8px;">Q3 2026</div>
-        <div style="font-size:16px;font-weight:900;text-transform:uppercase;margin-bottom:8px;">Staff Onboarding QR</div>
-        <p style="font-size:12px;color:#555;line-height:1.55;">Fast credential &amp; role assignment, asset tracking at check-in.</p>
-      </div>
-
-      <div style="background:#141414;padding:24px 24px;border-top:2px solid #333;">
-        <div style="font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:#555;font-weight:700;margin-bottom:8px;">OEA-103 &mdash; Sep 2026</div>
+      <div style="background:#141414;padding:26px 24px;border-top:2px solid #333;">
+        <div style="font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:#555;font-weight:700;margin-bottom:8px;">OEA-103 &mdash; Nov 2026</div>
         <div style="font-size:16px;font-weight:900;text-transform:uppercase;margin-bottom:8px;">Live Activities</div>
-        <p style="font-size:12px;color:#555;line-height:1.55;">Real-time athlete, aid station, and course clearance feed.</p>
+        <p style="font-size:12.5px;color:#777;line-height:1.55;">Real-time athlete, aid station, and course clearance feed.</p>
       </div>
 
-      <div style="background:#141414;padding:24px 24px;border-top:2px solid #333;">
+      <div style="background:#141414;padding:26px 24px;border-top:2px solid #333;">
+        <div style="font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:#555;font-weight:700;margin-bottom:8px;">Dec 2026</div>
+        <div style="font-size:16px;font-weight:900;text-transform:uppercase;margin-bottom:8px;">Post-Race Report</div>
+        <p style="font-size:12.5px;color:#777;line-height:1.55;">Consolidated post-event summary pulling incidents, medical/PCR activity and race data into a single report the ops and medical teams can review and export &mdash; scope to be defined with the ops team.</p>
+      </div>
+
+      <div style="background:#141414;padding:26px 24px;border-top:2px solid #333;">
         <div style="font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:#555;font-weight:700;margin-bottom:8px;">OEA-106 &mdash; Pushed, TBD</div>
         <div style="font-size:16px;font-weight:900;text-transform:uppercase;margin-bottom:8px;">Broadcast 2.0</div>
-        <p style="font-size:12px;color:#555;line-height:1.55;">Richer targeting, scheduled messages, expanded channels.</p>
+        <p style="font-size:12.5px;color:#777;line-height:1.55;">Richer targeting, scheduled messages, expanded channels.</p>
       </div>
 
     </div>
+
   </div>
 </section>
 
-<!-- DISCUSSION -->
+<!-- TESTING & ROLLOUT -->
 <section id="discuss">
   <div class="container">
     <div class="section-label fade-in"><div class="line"></div><span>Focus For This Session</span></div>
     <h2 class="section-title fade-in">Testing &amp; Rollout</h2>
-    <p class="fade-in" style="font-size:14px;color:#D4AF37;font-weight:700;max-width:820px;margin-bottom:8px;">&#9679; Phase 1 ran Tuesday, Aug 18 &mdash; next session likely Tuesday, Sep 1.</p>
-    <p class="fade-in" style="font-size:13px;color:var(--grey-text);max-width:820px;margin-bottom:32px;">Phase 1 ran Tuesday, Aug 18 &mdash; a big thank you to everyone who joined and tested with us. We're planning another session with the same group, likely Tuesday, September 1. We'll confirm by Thursday (Aug 27), once we've run some additional internal tests. Detailed instructions will go out by email once it's locked in.</p>
+    <p class="fade-in" style="font-size:13px;color:var(--grey-text);max-width:900px;margin-bottom:32px;">Second session with the same group. Since round 1 we&rsquo;ve closed out every issue you raised, fixed the performance problem, and run two internal rounds with the IT team &mdash; we&rsquo;re going in much more prepared this time.</p>
 
+    <style>
+      #discuss .discuss-grid { grid-template-columns: 1fr 1fr; }
+      @media (max-width: 900px) { #discuss .discuss-grid { grid-template-columns: 1fr; } }
+    </style>
     <div class="discuss-grid fade-in">
 
-      <div class="discuss-card">
+      <!-- READINESS -->
+      <div class="discuss-card" style="grid-column:1 / -1;">
         <div class="discuss-num">01</div>
-        <div class="discuss-title">Approved Plan &mdash; 4 Phases</div>
-        <p class="discuss-desc">Crawl-walk-run, each gated by a feedback round and a go/no-go checkpoint before moving on.</p>
-        <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:2px;margin-bottom:16px;">
-          <div style="background:var(--grey-dark);padding:16px 14px;border-top:2px solid var(--red);">
-            <div style="font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--red);font-weight:700;margin-bottom:6px;">Phase 1</div>
-            <div style="font-size:12px;color:var(--grey-text);line-height:1.5;">Hybrid tabletop + guided tasks, remote, 1 hr &mdash; core group only</div>
-            <div style="font-size:10.5px;color:#666;margin-top:8px;line-height:1.4;">Gate: no critical bugs &middot; confidence score &middot; improvements non-blocking</div>
+        <div class="discuss-title">What Changed Since Round 1</div>
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:6px;">
+          <div style="background:var(--grey-dark);padding:20px 18px;border-top:2px solid #27C93F;">
+            <div style="font-size:28px;font-weight:900;line-height:1;margin-bottom:8px;color:#27C93F;">23</div>
+            <div style="font-size:13px;color:#fff;font-weight:700;margin-bottom:4px;">Adjustments made</div>
+            <div style="font-size:12px;color:var(--grey-text);line-height:1.5;">Everything raised in the Aug 18 session has been addressed.</div>
           </div>
-          <div style="background:var(--grey-dark);padding:16px 14px;border-top:2px solid var(--red);">
-            <div style="font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--red);font-weight:700;margin-bottom:6px;">Phase 2</div>
-            <div style="font-size:12px;color:var(--grey-text);line-height:1.5;">Same format, wider team</div>
-            <div style="font-size:10.5px;color:#666;margin-top:8px;line-height:1.4;">Gate: go/no-go + feedback round</div>
+          <div style="background:var(--grey-dark);padding:20px 18px;border-top:2px solid #27C93F;">
+            <div style="font-size:28px;font-weight:900;line-height:1;margin-bottom:8px;color:#27C93F;">&#10003;</div>
+            <div style="font-size:13px;color:#fff;font-weight:700;margin-bottom:4px;">Performance / cache resolved</div>
+            <div style="font-size:12px;color:var(--grey-text);line-height:1.5;">The spinning screens on Gulf Coast / Florida are gone.</div>
           </div>
-          <div style="background:var(--grey-dark);padding:16px 14px;border-top:2px solid #D4AF37;">
-            <div style="font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:#D4AF37;font-weight:700;margin-bottom:6px;">Phase 3</div>
-            <div style="font-size:12px;color:var(--grey-text);line-height:1.5;">Field test in shadow/parallel mode, real race, no ops impact</div>
-            <div style="font-size:10.5px;color:#666;margin-top:8px;line-height:1.4;">Gate: go/no-go + feedback round</div>
-          </div>
-          <div style="background:var(--grey-dark);padding:16px 14px;border-top:2px solid #27C93F;">
-            <div style="font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:#27C93F;font-weight:700;margin-bottom:6px;">Phase 4</div>
-            <div style="font-size:12px;color:var(--grey-text);line-height:1.5;">Live pilot, real event, app in production</div>
+          <div style="background:var(--grey-dark);padding:20px 18px;border-top:2px solid #27C93F;">
+            <div style="font-size:28px;font-weight:900;line-height:1;margin-bottom:8px;color:#27C93F;">2</div>
+            <div style="font-size:13px;color:#fff;font-weight:700;margin-bottom:4px;">Internal test rounds</div>
+            <div style="font-size:12px;color:var(--grey-text);line-height:1.5;">Run with the IT team before bringing it back to you.</div>
           </div>
         </div>
       </div>
 
+      <!-- SESSION DESIGN -->
       <div class="discuss-card" style="grid-column:1 / -1;">
         <div class="discuss-num">02</div>
-        <div class="discuss-title">Phase 1 Session Design (Locked)</div>
+        <div class="discuss-title">Today&rsquo;s Session</div>
 
         <div class="discuss-sub-label">Session Timebox &mdash; 1 Hour, Remote</div>
         <div style="display:flex;height:52px;border-radius:6px;overflow:hidden;border:1px solid #333;margin-bottom:24px;">
@@ -816,11 +850,10 @@
             </div>
             <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;">
               <div>
-                <div class="discuss-sub-label">Features In Scope</div>
+                <div class="discuss-sub-label">Guided Tasks</div>
                 <ul class="discuss-list">
-                  <li>General flow: login, profile, home dashboard, race/event page, chat, and live communications</li>
-                  <li>Incident creation (basic)</li>
-                  <li>Time-permitting: a light pass on the rest of incident management</li>
+                  <li>Some tasks similar to Aug 18 &mdash; login, profile, home dashboard, race/event page, chat and live communications</li>
+                  <li><strong>New this round:</strong> incident management &mdash; creating, viewing and following up on incidents</li>
                 </ul>
               </div>
               <div>
@@ -830,12 +863,6 @@
                 </ul>
               </div>
             </div>
-            <div class="discuss-sub-label">Advance Criteria &mdash; Phase 1 &rarr; Phase 2</div>
-            <ul class="discuss-list">
-              <li>No critical bugs blocking features</li>
-              <li>Sufficient operational confidence score from participants</li>
-              <li>All improvement needs mapped and confirmed non-blocking</li>
-            </ul>
           </div>
           <div>
             <div class="desktop-frame">
@@ -847,62 +874,99 @@
         </div>
       </div>
 
+      <!-- WHERE TO TEST -->
       <div class="discuss-card" style="grid-column:1 / -1;border-top-color:#D4AF37;">
         <div class="discuss-num" style="color:#D4AF37;">03</div>
-        <div class="discuss-title">Status &mdash; Aug 25</div>
-        <div class="discuss-sub-label" style="color:#D4AF37;margin-top:0;">&#9679; Planning Re-Run</div>
-        <ul style="list-style:none;padding:0;display:grid;grid-template-columns:repeat(2,1fr);gap:10px 32px;">
-          <li style="display:flex;align-items:flex-start;gap:10px;font-size:13px;color:var(--grey-text);line-height:1.5;"><span style="color:#27C93F;flex-shrink:0;font-weight:900;">&#10003;</span><span><strong style="color:#fff">Phase 1 ran</strong> Tuesday, Aug 18 &mdash; thank you to everyone who joined and tested with us.</span></li>
-          <li style="display:flex;align-items:flex-start;gap:10px;font-size:13px;color:var(--grey-text);line-height:1.5;"><span style="color:#D4AF37;flex-shrink:0;font-weight:900;">&#9679;</span><span><strong style="color:#fff">Next session likely Tue, Sep 1</strong>, same core group &mdash; confirming by Thu, Aug 27 after running more internal tests.</span></li>
-          <li style="display:flex;align-items:flex-start;gap:10px;font-size:13px;color:var(--grey-text);line-height:1.5;"><span style="color:#27C93F;flex-shrink:0;font-weight:900;">&#10003;</span><span><strong style="color:#fff">Guest list confirmed</strong> for Phase 1 (core group).</span></li>
-          <li style="display:flex;align-items:flex-start;gap:10px;font-size:13px;color:var(--grey-text);line-height:1.5;"><span style="color:#27C93F;flex-shrink:0;font-weight:900;">&#10003;</span><span><strong style="color:#fff">Incident management test flow + test data ready.</strong> Guided test flow and incident scenario cards/data are prepared and validated.</span></li>
-          <li style="display:flex;align-items:flex-start;gap:10px;font-size:13px;color:var(--grey-text);line-height:1.5;"><span style="color:#27C93F;flex-shrink:0;font-weight:900;">&#10003;</span><span><strong style="color:#fff">CRM test data on track.</strong> Jordan is setting up the CRM data; no longer a blocker.</span></li>
-          <li style="display:flex;align-items:flex-start;gap:10px;font-size:13px;color:var(--grey-text);line-height:1.5;"><span style="color:#27C93F;flex-shrink:0;font-weight:900;">&#10003;</span><span><strong style="color:#fff">RTRT / data setup de-risked.</strong> Pat (data owner) supported heavily last week &mdash; no longer a blocking dependency.</span></li>
-        </ul>
+        <div class="discuss-title">Where To Test</div>
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:6px;margin-bottom:16px;">
+          <div style="background:var(--grey-dark);padding:20px 18px;border-top:2px solid #27C93F;">
+            <div style="display:flex;align-items:center;gap:9px;margin-bottom:6px;">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="#27C93F"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+              <span style="font-size:14px;font-weight:900;text-transform:uppercase;color:#fff;">iPhone / iPad</span>
+            </div>
+            <div style="font-size:12.5px;color:var(--grey-text);line-height:1.55;">Live on the <strong style="color:#fff">App Store</strong> &mdash; just search and download. No TestFlight needed.</div>
+          </div>
+          <div style="background:var(--grey-dark);padding:20px 18px;border-top:2px solid #27C93F;">
+            <div style="display:flex;align-items:center;gap:9px;margin-bottom:6px;">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#27C93F" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              <span style="font-size:14px;font-weight:900;text-transform:uppercase;color:#fff;">Web</span>
+            </div>
+            <div style="font-size:12.5px;color:var(--grey-text);line-height:1.55;">Open in the browser &mdash; nothing to install.</div>
+          </div>
+          <div style="background:var(--grey-dark);padding:20px 18px;border-top:2px solid #D4AF37;">
+            <div style="display:flex;align-items:center;gap:9px;margin-bottom:6px;">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="#D4AF37"><path d="M3 20.5v-17c0-.83.94-1.3 1.6-.8l14 8.5c.6.36.6 1.24 0 1.6l-14 8.5c-.66.5-1.6.03-1.6-.8z"/></svg>
+              <span style="font-size:14px;font-weight:900;text-transform:uppercase;color:#fff;">Android</span>
+            </div>
+            <div style="font-size:12.5px;color:var(--grey-text);line-height:1.55;">Available, but <strong style="color:#D4AF37;">you must be added as an internal tester first</strong> &mdash; send us your Google account.</div>
+          </div>
+        </div>
+        <div style="padding:12px 16px;background:var(--grey-dark);border-left:2px solid #D4AF37;">
+          <span style="font-size:13px;color:#D4AF37;font-weight:700;">Instructions and links will be sent in the chat.</span>
+        </div>
       </div>
 
-      <div class="discuss-card">
-        <div class="discuss-num">04</div>
-        <div class="discuss-title">Phase 1 Participants &mdash; Core Group</div>
-        <p class="discuss-desc">
-          Same core group as Aug 18. <strong>Next step: re-run the session, likely Tue Sep 1 (confirming by Thu, Aug 27).</strong>
-        </p>
+      <!-- PCR AT KONA -->
+      <div class="discuss-card" style="border-top-color:#D4AF37;">
+        <div class="discuss-num" style="color:#D4AF37;">04</div>
+        <div class="discuss-title">PCR At Kona &mdash; Oct 10</div>
+        <p class="discuss-desc"><strong>TK would like to trial the PCR on site with a group of physicians.</strong></p>
         <ul class="discuss-list">
-          <li>Drew Wolff</li>
-          <li>Ken High</li>
-          <li>Keats McGonigal</li>
-          <li>Beth Atnip</li>
-          <li>Courtney Smith</li>
-          <li>Robert Cerniglia</li>
-          <li>Pat Riley</li>
+          <li>Preparing a dedicated sandbox environment</li>
+          <li>Onboarding guide for the physician group</li>
         </ul>
+        <div class="discuss-note">First field exposure for the module &mdash; the reason permissions and data security are this sprint&rsquo;s focus.</div>
       </div>
 
+      <!-- ROLLOUT PATH -->
       <div class="discuss-card">
         <div class="discuss-num">05</div>
-        <div class="discuss-title">Related Tracks</div>
-        <ul class="discuss-list">
-          <li><strong>PCR tabletop:</strong> separate session with TK (Dr. Miller) + medical team &mdash; highly engaged, a real adoption win. <strong>Kona (Oct 10)</strong> flagged as a PCR field-test opportunity (target ~50 records Weekend section + ~50 main tent)</li>
-          <li><strong>Slot Allocations:</strong> to be tested as an isolated module after core flows are validated &mdash; dedicated coordination touchpoint held today (Aug 11)</li>
-        </ul>
+        <div class="discuss-title">Rollout Path</div>
+        <div style="display:flex;flex-direction:column;gap:2px;">
+          <div style="background:var(--grey-dark);padding:14px 16px;border-left:2px solid #D4AF37;">
+            <div style="font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:#D4AF37;font-weight:700;margin-bottom:4px;">Oct 10</div>
+            <div style="font-size:13px;color:#fff;font-weight:700;">Kona</div>
+            <div style="font-size:12px;color:var(--grey-text);line-height:1.5;">PCR trial with physicians, sandbox environment</div>
+          </div>
+          <div style="background:var(--grey-dark);padding:14px 16px;border-left:2px solid var(--red);">
+            <div style="font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--red);font-weight:700;margin-bottom:4px;">Nov 7</div>
+            <div style="font-size:13px;color:#fff;font-weight:700;">Panama City</div>
+            <div style="font-size:12px;color:var(--grey-text);line-height:1.5;">Guided go-live, side-by-side with the current process</div>
+          </div>
+          <div style="background:var(--grey-dark);padding:14px 16px;border-left:2px solid #27C93F;">
+            <div style="font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:#27C93F;font-weight:700;margin-bottom:4px;">Dec 13</div>
+            <div style="font-size:13px;color:#fff;font-weight:700;">70.3 Florida</div>
+            <div style="font-size:12px;color:var(--grey-text);line-height:1.5;">Next step on the path</div>
+          </div>
+        </div>
       </div>
 
-      <div class="discuss-card" style="grid-column:1 / -1;">
-        <div class="discuss-num">06</div>
-        <div class="discuss-title">Discussion Points To Carry Into The Session</div>
+      <!-- OPEN ITEM -->
+      <div class="discuss-card" style="grid-column:1 / -1;border-top-color:#D4AF37;">
+        <div class="discuss-num" style="color:#D4AF37;">06</div>
+        <div class="discuss-title">Open Item &mdash; Google Play</div>
+        <p class="discuss-desc">The latest Android build is <strong>held over an IRONMAN brand-rights dispute</strong> &mdash; which is why Android testing runs through the internal track for now.</p>
         <ul class="discuss-list">
-          <li>Confirm licensed-events access &mdash; non-<code>ironman.com</code> domains for LatAm</li>
+          <li>James has engaged legal</li>
+          <li><strong style="color:#D4AF37;">Sep 30 deadline to resolve it</strong></li>
         </ul>
       </div>
 
     </div>
+
+    <!-- HANDOFF -->
+    <div style="margin-top:2px;background:var(--red);padding:24px 28px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;" class="fade-in">
+      <div style="font-size:22px;font-weight:900;text-transform:uppercase;letter-spacing:-0.5px;color:#fff;">&rarr; Straight Into The Test Session</div>
+      <div style="font-size:13px;color:rgba(255,255,255,0.9);">1 hour &mdash; guided tasks, then live feedback.</div>
+    </div>
+
   </div>
 </section>
 
 <!-- FOOTER -->
 <footer>
   <img src="data:image/png;base64,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" alt="IRONMAN"/>
-  <p>Ops ROC Application &mdash; Bi-Weekly Update &middot; Aug 25, 2026 &middot; v0.9.1</p>
+  <p>Ops ROC Application &mdash; Project Update &middot; Sep 22, 2026 &middot; v0.10.0</p>
 </footer>
 
 <script>
