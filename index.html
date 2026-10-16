@@ -837,7 +837,7 @@ function init(staticryptConfig, templateConfig) {
         if (typeof replaceHtmlCallback === "function") {
             replaceHtmlCallback(plainHTML);
         } else {
-            sessionStorage.setItem('roc_auth', '1');
+            localStorage.setItem('roc_until', Date.now() + 432e5);
             document.write(plainHTML);
             document.close();
         }
@@ -1043,7 +1043,7 @@ exports.init = init;
             // try to automatically decrypt on load if there is a saved password
             window.onload = async function () {
                 // auto-decrypt if user already authenticated on another page
-                if (sessionStorage.getItem("roc_auth") === "1") {
+                if (+localStorage.getItem("roc_until") > Date.now()) {
                     const { isSuccessful: autoOk } = await staticrypt.handleDecryptionOfPage("roc2025", false);
                     if (autoOk) return;
                 }

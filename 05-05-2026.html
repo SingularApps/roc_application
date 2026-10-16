@@ -252,14 +252,14 @@
 </div>
 <script>
   (function () {
-    if (sessionStorage.getItem('roc_auth') === '1') {
+    if (+localStorage.getItem('roc_until') > Date.now()) {
       document.getElementById('roc-gate').style.display = 'none';
       return;
     }
     function tryAuth() {
       var val = document.getElementById('roc-gate-input').value;
       if (val === 'roc2025') {
-        sessionStorage.setItem('roc_auth', '1');
+        localStorage.setItem('roc_until', Date.now() + 432e5);
         document.getElementById('roc-gate').style.display = 'none';
       } else {
         document.getElementById('roc-gate-err').style.display = 'block';
